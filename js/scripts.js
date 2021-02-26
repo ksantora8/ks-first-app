@@ -1,62 +1,72 @@
 let pokemonList = [
  {
-   name = 'Bulbasaur',
-   type = [ 'grass' , 'poison' ]
-   attack = 49 ,
-   defense = 49 ,
+   name : 'Bulbasaur',
+   type : [ 'grass' , 'poison' ],
+   height : 0.7 ,
+   attack : 49 ,
+   defense : 49 ,
  } ,
  {
-   name = 'Charmander',
-   type = [ 'fire' ]
-   attack = 52 ,
-   defense = 43 ,
+   name : 'Charmander',
+   type : [ 'fire' ],
+   height : 0.6 ,
+   attack : 52 ,
+   defense : 43 ,
  } ,
  {
-   name = 'Squirtle',
-   type = [ 'water' ]
-   attack = 48 ,
-   defense = 45 ,
+   name : 'Squirtle',
+   type : [ 'water' ],
+   height : 0.5 ,
+   attack : 48 ,
+   defense : 45 ,
  } ,
  {
-   name = 'Caterpie',
-   type = [ 'bug' ]
-   attack = 30 ,
-   defense = 35 ,
+   name : 'Caterpie',
+   type : [ 'bug' ],
+   height : 0.3 ,
+   attack : 30 ,
+   defense : 35 ,
  } ,
  {
-   name = 'Weedle',
-   type = [ 'bug' , 'poison' ]
-   attack = 35 ,
-   defense = 30 ,
+   name : 'Weedle',
+   type : [ 'bug' , 'poison' ],
+   height : 0.3 ,
+   attack : 35 ,
+   defense : 30 ,
  } ,
  {
-   name = 'Pidgey',
-   type = [ 'normal' , 'flying' ]
-   attack = 45 ,
-   defense = 40 ,
+   name : 'Pidgey',
+   type : [ 'normal' , 'flying' ],
+   height : 0.3 ,
+   attack : 45 ,
+   defense : 40 ,
  } ,
  {
-   name = 'Rattata',
-   type = [ 'normal' ]
-   attack = 56 ,
-   defense = 35 ,
+   name : 'Rattata',
+   type : [ 'normal' ],
+   height : 0.3 ,
+   attack : 56 ,
+   defense : 35 ,
  } ,
  {
-   name = 'Spearow',
-   type = [ 'normal' , 'flying' ]
-   attack = 60 ,
-   defense = 30 ,
+   name : 'Spearow',
+   type : [ 'normal' , 'flying' ],
+   height : 0.3 ,
+   attack : 60 ,
+   defense : 30 ,
  } ,
  {
-   name = 'Ekans',
-   type = [ 'poison' ]
-   attack = 60 ,
-   defense = 44 ,
+   name : 'Ekans',
+   type : [ 'poison' ],
+   height : 2 ,
+   attack : 60 ,
+   defense : 44 ,
  } ,
  {
-   name = 'Pikachu',
-   type = [ 'electric' ]
-   attack = 55 ,
-   defense = 40 ,
+   name : 'Pikachu',
+   type : [ 'electric' ],
+   height : 0.4 ,
+   attack : 55 ,
+   defense : 40 ,
  }
 ];
