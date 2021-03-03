@@ -70,3 +70,10 @@ let pokemonList = [
    defense : 40 ,
  }
 ];
+for (var i = 0 ; i < pokemonList.length ; i++){
+  if (pokemonList[i].height > 1){
+    document.write (pokemonList[i].name + "  (Height: " + pokemonList[i].height + ") - Wow! That's tall! " + "<br>");
+  }else{
+    document.write (pokemonList[i].name + "  (Height: " + pokemonList[i].height + ") <br>");
+  }
+}
