@@ -76,7 +76,7 @@ let pokemonRepository = (function(){
       return pokemonList;
     }
 
-  function add(item){
+  function addPokemon(item){
     if(typeof(item)=='object'){
       let newPokeProperty = Object.keys(item);
       if (newPokeProperty.includes('name') && newPokeProperty.includes('height') && newPokeProperty.includes('type') && newPokeProperty.includes('attack') && newPokeProperty.includes('defense'))
@@ -86,20 +86,40 @@ let pokemonRepository = (function(){
     }
   }
 
+  function addListItem(pokemon){
+    let list = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let listButton = document.createElement('button');
+    listButton.innerText = pokemon.name;
+    listButton.classList.add('custom-button');
+    list.appendChild(listButton);
+    list.appendChild(listItem);
+    addListener(listButton, pokemon);
+  }
+
+  function addListener(listButton, pokemon){
+      listButton.addEventListener('click', () => showDetails(pokemon));
+  }
+
+  function showDetails(pokemon){
+      console.log(pokemon)
+  }
+
   return{
     getAll: getAll,
-    add: add,
+    addPokemon: addPokemon,
+    addListItem: addListItem,
   }
 })();
 
-function display(pokemon) {
-    if (pokemon.height > 1){
-      document.write (pokemon.name + "  (Height: " + pokemon.height + ") - Wow! That's tall! " + "<br> <br>");
-    }else{
-      document.write (pokemon.name + "  (Height: " + pokemon.height + ") <br> <br>");
-    }
-  }
+//function display(pokemon) {
+    //if (pokemon.height > 1){
+     // document.write (pokemon.name + "  (Height: " + pokemon.height + ") - Wow! That's tall! " + "<br> <br>");
+    //}else{
+     // document.write (pokemon.name + "  (Height: " + pokemon.height + ") <br> <br>");
+    //}
+ // }
 
-pokemonRepository.add({ name: 'Sandshrew', type: ['ground'], height: 0.2, attack: 75, defense:85, });
+//pokemonRepository.addPokemon({ name: 'Sandshrew', type: ['ground'], height: 0.2, attack: 75, defense:85, });
 
-pokemonRepository.getAll().forEach(display);
+pokemonRepository.getAll().forEach(pokemon => pokemonRepository.addListItem(pokemon));
